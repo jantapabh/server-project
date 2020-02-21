@@ -6,10 +6,10 @@ const fs = require('fs');     // to help serve a local video file
 // Create an instance of the http server to handle HTTP requests
 let app = http.createServer((req, res) => {
     // Set a response type of mp4 video for the response
-    res.writeHead(200, {'Content-Type': 'video/mp4'});
+    res.writeHead(200, {'Content-Type': 'plain/text'});
 
     // Read the video into a stream
-    let vidstream = fs.createReadStream('assets/Yngwie_Malmsteen_interview.mp4');
+    let vidstream = fs.createReadStream('Hello');
 
     // Pipe our stream into the response
     vidstream.pipe(res);
