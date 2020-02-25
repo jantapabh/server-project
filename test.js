@@ -25,7 +25,7 @@
 
 
 var express = require('express')
-var app = express()ว
+var app = express();
 
 
 app.set('views', './views')
